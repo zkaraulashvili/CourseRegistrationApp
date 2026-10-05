@@ -1,0 +1,14 @@
+@model CourseRegistrationApp.Models.CourseRegistration
+
+@{
+    ViewData["Title"] = "Success";
+}
+
+<h2>Registration Successful!</h2>
+
+<p>Student: @Model.StudentName</p>
+<p>Course: @Model.Course</p>
+
+<a asp-controller="Registration" asp-action="Index">
+    Register another student
+</a>
